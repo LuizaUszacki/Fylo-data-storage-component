@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <script src="./assets/js/index.js" defer></script>
+  
+  <title>Fylo data storage component</title>
+
+</head>
+<body>
+
+  <main class="container">
+
+    <div class="container__input">
+      <a href="#" aria-label="Link to the home page - Logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
+
+      <ul class="container__input__list">
+        <li>
+          <button aria-label="Press to input a document" class="btn-input btn-input--document" data-type="document">
+            <input type="file" class="input--document" data-type="document" hidden>
+          </button>
+        </li>
+
+        <li>
+          <button aria-label="Press to input a folder" class="btn-input btn-input--folder" data-type="folder">
+            <input type="file" class="input--folder" data-type="folder" webkitdirectory multiple hidden>
+          </button>
+        </li>
+
+        <li>
+          <button aria-label="Press to upload a file" class="btn-input btn-input--upload" data-type="upload">
+            <input type="file" class="input--upload" data-type="upload" hidden>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="container__status">
+      <p>You've used <span class="used-storage">815 GB</span> of your storage</p>
+      <div class="container__status__storage-left"><p><span class="free-storage">185</span> GB Left</p></div>
+
+      <div class="container__status__storage" aria-label="Bar - Percentage of used storage">
+        <div class="used-storage-bar">
+          <span id="storage-bar"></span>
+        </div>
+        <p>0 GB</paria-label=>
+        <p>1000 GB</p>
+      </div>
+      
+    </div>
+  </main>
+
+  
+  
+  
+  
+  
+</body>
+</html>

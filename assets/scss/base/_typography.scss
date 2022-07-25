@@ -1,0 +1,30 @@
+@use '../utils' as u;
+
+body {
+    font-family: u.$font;
+    font-size: u.rem(14);
+}
+
+.used-storage,
+.free-storage,
+.container__status__storage p {
+    font-weight: 700;
+}
+
+.container__status p {
+    color: var(--pale-blue);
+}
+
+.container__status__storage-left {
+    & > p {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--grayish-blue);
+    }
+
+    .free-storage {
+        color: var(--very-dark-blue);
+        font-size: u.rem(35);
+        vertical-align: sub;
+    }
+}
